@@ -11,7 +11,7 @@ This repository contains a Research Agent built using the `claude-agent-sdk`. Th
 ## Prerequisites
 
 - Python 3.7+
-- A valid API key or configuration for `claude-agent-sdk` (assuming the SDK requires environment setup).
+- Configure the `claude-agent-sdk` with the required API key or credentials. See the [claude-agent-sdk documentation](https://pypi.org/project/claude-agent-sdk/) for detailed setup instructions.
 
 ## Installation
 
