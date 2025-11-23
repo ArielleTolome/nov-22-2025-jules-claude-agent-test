@@ -18,7 +18,7 @@ This file defines the capabilities of the agent using the Model Context Protocol
 Two tools are defined using the `@tool` decorator from `claude_agent_sdk`.
 
 - **`search`**:
-  - Uses `duckduckgo_search.DDGS` to perform web searches.
+  - Uses `ddgs.DDGS` to perform web searches.
   - It runs the synchronous `DDGS` call in a separate thread using `loop.run_in_executor` to prevent blocking the async event loop.
   - Returns a list of search results.
 

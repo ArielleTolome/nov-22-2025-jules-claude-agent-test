@@ -1,5 +1,5 @@
 from claude_agent_sdk import tool, create_sdk_mcp_server
-from duckduckgo_search import DDGS
+from ddgs import DDGS
 import httpx
 from bs4 import BeautifulSoup
 import logging
@@ -25,7 +25,7 @@ async def search(input_data: dict) -> dict:
     logger.info(f"Searching for: {query}")
     try:
         # DDGS is synchronous, run in executor to avoid blocking
-        loop = asyncio.get_event_loop()
+        loop = asyncio.get_running_loop()
         results = await loop.run_in_executor(None, lambda: list(DDGS().text(query, max_results=5)))
         return {"results": results}
     except Exception as e:
