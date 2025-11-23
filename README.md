@@ -20,7 +20,7 @@ This repository contains a Research Agent built using the `claude-agent-sdk`. Th
 2. Install the required dependencies:
 
    ```bash
-   pip install claude-agent-sdk duckduckgo-search httpx beautifulsoup4
+   pip install claude-agent-sdk ddgs httpx beautifulsoup4
    ```
 
 ## Usage
